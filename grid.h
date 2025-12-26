@@ -19,4 +19,8 @@ void destroyGrid(struct Grid *g);
 //Print the grid to console
 void printGrid(struct Grid *g);
 
+//Get and update individual char's in the grid
+char getCellValue(struct Grid *g, unsigned int x, unsigned int y);
+void changeCellValue(struct Grid *g, unsigned int x, unsigned int y, char val);
+
 #endif
