@@ -33,7 +33,7 @@ char *initRow(unsigned int size){
     char *p = malloc((sizeof(char) * size) + 1);
     if(!p) return NULL;
     for(int i = 0; i < size; i++){
-        p[i] = 'O';
+        p[i] = '*';
     }
     p[size] = '\0';
     return p;

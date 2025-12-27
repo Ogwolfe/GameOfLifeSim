@@ -4,10 +4,8 @@
 
 int main(void){
 
-    struct Grid *my_grid = createGrid(12);
-    destroyGrid(my_grid);
-
-    struct Game *my_game = initGame(10);
+    struct Game *my_game = initGame(25);
+    runGame(my_game, 200);
     destroyGame(my_game);
 
     return 0;
