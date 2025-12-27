@@ -3,14 +3,15 @@
 
 struct Grid{
     char** grid;
-    unsigned int grid_size;
+    unsigned int width;
+    unsigned int height;
 };
 
 //Create a Grid struct to represent the GoL grid
-struct Grid *createGrid(unsigned int size);
+struct Grid *createGrid(unsigned int w, unsigned int h);
 
 //Create and initialize the char** for the grid in the Grid struct
-char **initGrid(unsigned int size);
+char **initGrid(unsigned int w, unsigned int h);
 char *initRow(unsigned int size);
 
 //Free all the memory allocated for the grid

@@ -12,8 +12,8 @@ struct Game {
     unsigned int **statusGrid;
 };
 
-struct Game *initGame(unsigned int size);
-unsigned int **initStatusGrid(unsigned int size);
+struct Game *initGame(unsigned int width, unsigned int height);
+unsigned int **initStatusGrid(unsigned int width, unsigned int height);
 void destroyGame(struct Game *gp);
 unsigned int checkCell(struct Game *gp, int x, int y);
 void randomizeGrid(struct Game *gp);
